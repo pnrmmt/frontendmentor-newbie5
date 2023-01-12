@@ -1,0 +1,173 @@
+/* font-family: 'Red Hat Display', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: hsl(225, 100%, 94%);
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif; 
+    text-align: center;
+
+
+}
+
+.container{
+    max-width: 430px;
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+ 
+}
+.order{
+    margin-top: 20px;
+}
+
+
+
+.orderan{
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-weight: 900;
+    margin-top: 20px;
+    color: hsl(223, 47%, 23%);
+}
+
+h2{
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 1.1em;
+  
+}
+
+
+.order p{
+    margin-top: 20px;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.4em;
+    font-size: 1.1em;
+}
+
+.annual{
+    margin-top: 30px;
+    padding: 17px 25px;
+    width:100%;
+    border-radius: 20px;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    /* text-align left: eğer alt alta iki satır varsa ikisini de SOL BAŞA HİZALAR */
+  
+}
+.annual-new{
+    margin-left: 13px;
+}
+
+.annyear{
+    
+    display: flex;
+
+}
+.year{
+    color: hsl(224, 23%, 55%);;
+
+}
+.change{
+    color: hsl(245, 42%, 39%);
+    font-weight: 900;
+}
+
+.change:hover{
+    color:hsl(224, 23%, 55%)
+}
+
+
+.proceed{
+    width: 100%;
+    padding: 13px;
+    border-radius: 10px;
+    margin-top: 27px;
+    background-color:  hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    font-family:  'Red Hat Display', sans-serif; 
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 3px 15px rgb(126, 126, 117);
+
+}
+.proceed:hover{
+   background-color:  hsl(224, 23%, 55%)
+}
+
+.cancel{
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color:  hsl(0, 0%, 100%);
+    color: white;
+    font-weight: 900;
+    font-family:  'Red Hat Display', sans-serif; ;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+
+}
+
+.cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+}
+
+ @media only screen and (max-width:445px){
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 0.6em;
+    }
+    .container{
+        max-width: 87%;
+    }
+    .annual{
+        margin-top: 30px;
+        padding: 17px 10px;
+    }
+
+    .annual-new{
+        margin-top: 9px;
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+    .order p{
+        
+        font-size: 1.3em;
+    }
+}
